@@ -1,22 +1,18 @@
 <template>
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-sm">
+  <header
+    class="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-sm bg-[#4a2e1f]"
+  >
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-[#6b4c35] tracking-wide">
-        Wahyu Coffee
-      </h1>
+      <h1 class="text-2xl font-bold text-white tracking-wide">Wahyu Coffee</h1>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <router-link to="/" class="hover:text-[#6b4c35] transition"
-          >Home</router-link
-        >
-        <router-link to="/menu" class="hover:text-[#6b4c35] transition"
-          >Menu</router-link
-        >
-        <router-link to="/ourstory" class="hover:text-[#6b4c35] transition"
+        <router-link to="/" class="text-white transition">Home</router-link>
+        <router-link to="/menu" class="text-white transition">Menu</router-link>
+        <router-link to="/ourstory" class="text-white transition"
           >Our Story</router-link
         >
-        <router-link to="/contact" class="hover:text-[#6b4c35] transition"
+        <router-link to="/contact" class="text-white transition"
           >Contact</router-link
         >
       </nav>
