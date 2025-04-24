@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="sticky top-0 z-50 backdrop-blur bg-white/80 shadow-sm bg-[#4a2e1f]"
-  >
+  <header class="sticky top-0 z-50 backdrop-blur shadow-sm bg-[#4a2e1f]">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-white tracking-wide">Wahyu Coffee</h1>
 
@@ -20,7 +18,7 @@
       <!-- Hamburger -->
       <button class="md:hidden focus:outline-none" @click="toggleMenu">
         <svg
-          class="w-6 h-6 text-[#6b4c35]"
+          class="w-6 h-6 text-white"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -39,30 +37,18 @@
     <transition name="fade">
       <nav
         v-if="isOpen"
-        class="md:hidden px-6 py-4 space-y-4 bg-white border-t border-gray-200 text-sm font-medium shadow"
+        class="md:hidden px-6 py-4 space-y-4 bg-[#4a2e1f border-t border-gray-200 text-sm font-medium shadow"
       >
-        <router-link
-          @click="closeMenu"
-          to="/"
-          class="block hover:text-[#6b4c35]"
+        <router-link @click="closeMenu" to="/" class="block text-white"
           >Home</router-link
         >
-        <router-link
-          @click="closeMenu"
-          to="/menu"
-          class="block hover:text-[#6b4c35]"
+        <router-link @click="closeMenu" to="/menu" class="block text-white"
           >Menu</router-link
         >
-        <router-link
-          @click="closeMenu"
-          to="/ourstory"
-          class="block hover:text-[#6b4c35]"
+        <router-link @click="closeMenu" to="/ourstory" class="block text-white"
           >Our Story</router-link
         >
-        <router-link
-          @click="closeMenu"
-          to="/contact"
-          class="block hover:text-[#6b4c35]"
+        <router-link @click="closeMenu" to="/contact" class="block text-white"
           >Contact</router-link
         >
       </nav>
